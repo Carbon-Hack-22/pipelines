@@ -1,0 +1,6 @@
+{
+    "global_config" : {
+        "admin_email" : "jpark@olivawtech.com",
+        "cas_url" : "https://carbon-aware-api.azurewebsites.net"
+    }
+}
