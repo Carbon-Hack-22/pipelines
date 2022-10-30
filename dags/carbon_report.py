@@ -6,8 +6,7 @@ from textwrap import dedent
 from airflow import DAG
 
 # Operators; we need this to operate!
-from airflow.operators.bash import BashOperator
-from airflow.operators.dummy_operator import DummyOperator
+from airflow.operators.empty import EmptyOperator
 
 from airflow.models import Variable
 from custom_ops.region_selector import RegionSelectorOperator
@@ -50,8 +49,8 @@ with DAG(
     tags=['carbon_report'],
 ) as dag:
 
-    start = DummyOperator(task_id='start')
-    end = DummyOperator(task_id='end')
+    start = EmptyOperator(task_id='start')
+    end = EmptyOperator(task_id='end')
 
     cas_task_id = 'cas_task'
     cas_task = RegionSelectorOperator(task_id=cas_task_id, cas_url=global_vars['cas_url'])

@@ -8,8 +8,9 @@ class RegionSelectorOperator(BaseOperator):
         super(RegionSelectorOperator, self).__init__(*args, **kwargs)
 
     def execute(self, context):
-        # TODO: Implement region selection logic
         logging.info("RegionSelectorOperator: cas_url: %s", self.cas_url)
+
+        # TODO: Implement region selection logic
 
         selected_region = 'eastus'
         region_selection_report = {

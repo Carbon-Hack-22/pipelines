@@ -8,6 +8,10 @@ This is a repository for developing Airflow pipeline scripts
 
 - Python 3 installed
 
+### Development
+
+For development, we recommend that you create create virtual environment by executing `python -m venv .venv`
+
 ### Installation
 
 You can skip this step if you already installed Airflow
