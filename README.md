@@ -2,6 +2,7 @@
 
 This is a repository for developing Airflow pipeline scripts
 
+![carbon_report graph view](dag_graph.png?raw=true)
 ## Getting Started
 
 ### Prerequisites
